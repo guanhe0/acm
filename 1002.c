@@ -20,6 +20,10 @@ int main()
 		
 		printf("%s + %s = ",a,b);
 		add(a,b);
+		if(T>=1)
+		{
+			printf("\n\n");
+		}
 	}
 	return 0;
 }
@@ -96,5 +100,4 @@ void add(char a[],char b[])
 	//	c[index-k]=tmp;
 	    printf("%c",c[k]);
 	}
-	printf("\n\n");
 }
