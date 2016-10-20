@@ -5,7 +5,10 @@ int main()
 	int n,sum=0;
 	while(scanf("%d",&n)!=EOF)
 	{
-		sum=((1+n)*n)/2;
+		if((n+1)%2==0)
+		{sum=((n+1)/2)*n;}
+		else
+		{sum=(n/2)*(n+1);}
 		printf("%d\n",sum);
 		sum=0;
 	}
