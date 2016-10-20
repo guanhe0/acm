@@ -24,6 +24,10 @@ int main()
 		{
 			printf("\n\n");
 		}
+		else
+		{
+			printf("\n");
+		}
 	}
 	return 0;
 }
