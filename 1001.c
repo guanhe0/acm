@@ -9,7 +9,7 @@ int main()
 		{sum=((n+1)/2)*n;}
 		else
 		{sum=(n/2)*(n+1);}
-		printf("%d\n",sum);
+		printf("%d\n\n",sum);
 		sum=0;
 	}
 	return 0;
