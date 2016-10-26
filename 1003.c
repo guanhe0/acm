@@ -18,7 +18,7 @@ int main()
 		int j;
 		for(j = 0; j < i; j++)
 		{
-			
+					
 		}
 	}
 	return 0;
