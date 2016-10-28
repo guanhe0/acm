@@ -24,7 +24,7 @@ int main()
 				fn_1=fn[i];
 				i++;
 			}
-			printf("%d\n",fn[(n%(MAX_RAND-1))-1]);
+			printf("%d\n",fn[((n-1)%(MAX_RAND-1))]);
 		}
 	}
 	return 0;
