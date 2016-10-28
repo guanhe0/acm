@@ -17,21 +17,14 @@ int main()
 			int fn[MAX_RAND-1];
 			fn[0]=fn_1;
 			fn[1]=fn_2;
-			if(n==1|n==2)
+			while(i<MAX_RAND)
 			{
-				printf("%d\n",1);
+				fn[i]=(A*fn_1+B*fn_2)%MAX_RAND;
+				fn_2=fn_1;
+				fn_1=fn[i];
+				i++;
 			}
-			else
-			{
-				while(i<MAX_RAND)
-				{
-					fn[i]=(A*fn_1+B*fn_2)%MAX_RAND;
-					fn_2=fn_1;
-					fn_1=fn[i];
-					i++;
-				}
-				printf("%d\n",fn[(n%(MAX_RAND-1))-1]);
-			}
+			printf("%d\n",fn[(n%(MAX_RAND-1))-1]);
 		}
 	}
 	return 0;
